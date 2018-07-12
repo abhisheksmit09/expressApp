@@ -34,6 +34,8 @@ router.get('/isValidToken',checkToken,function(req, res){
   res.json({success:true,message:"Token is valid"});
 })
 
+//new line added
+
 router.get('/recomOrderTransactionHistory',checkToken,function(req, res){
   var loggedinUser = req.decoded.id;
   UserMethods.recomOrderTransactionHistory(loggedinUser, function(response){
